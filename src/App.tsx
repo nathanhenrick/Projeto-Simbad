@@ -1,17 +1,14 @@
 import { Header } from "./components/Header/Header";
+import { Card } from "./components/Card/Card";
 import { GlobalStyles } from "./components/styles/GlobalStyles";
 
 function App() {
- 
-
   return (
     <>
-    <GlobalStyles />
+      <GlobalStyles />
       <Header />
-
-      
-
-      {/* <Card /> */}
+      <Card off={25} unit={2} stock={25} productID={1}/>
+      <Card off={25} unit={2} stock={25} productID={2}/>
     </>
   );
 }
