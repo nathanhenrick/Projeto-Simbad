@@ -21,7 +21,7 @@ export const FormSearch = styled.form`
 `;
 export const ImageSearch = styled.div`
   svg {
-    background-color: var()(--myBlue);
+    background-color: var() (--myBlue);
     width: 1.25rem;
     height: 100%;
     border-right: 2px solid var(--myBlack);
@@ -38,16 +38,19 @@ export const InputSearch = styled.input`
   font-weight: 500;
 `;
 export const CartButton = styled.div`
+  transition-duration: 0.3s;
   svg {
-    width: 1.75rem;    
+    width: 1.75rem;
     height: 1.75rem;
     stroke: var(--myBlack);
     fill: var(--myBlack);
-    transition-duration: .3s;
   }
-  &hover {
+  &:hover {
     transform: scale(1.2);
-    fill: red;
-    cursor: pointer; 
+    cursor: pointer;
+
+    svg {
+      fill: var(--myDarkBlue);
+    }
   }
 `;

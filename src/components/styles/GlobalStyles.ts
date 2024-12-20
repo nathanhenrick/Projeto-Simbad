@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  body {
+  body, html {
     display: flex;
     justify-content: center;
     padding: 1.25rem;

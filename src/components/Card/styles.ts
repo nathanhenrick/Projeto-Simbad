@@ -1,15 +1,19 @@
 import styled from "styled-components";
 
 export const WrapperCard = styled.article`
+  display: block;
+  align-content: center;
+  padding: 0.25rem;
   background-color: #f0f8ff;
-  width: 100%;
-  padding: 0.5rem;
+  width: 90vw;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 `;
 
 export const ImageCard = styled.img`
-  width: 6.875rem;
-  height: 6.875rem;
-  border: 0.25rem solid #0e1216;
+  max-width: 150px;
+  padding: 0.25rem;
+  border: 2px solid #0e1216;
   display: inline;
   margin-right: 1.5rem;
 `;
@@ -41,7 +45,7 @@ export const OffCard = styled.h2`
 export const TitleCard = styled.h1`
   color: #0e1216;
   font-weight: bold;
-  width: 45vw;
+  width: 90%;
 `;
 
 export const UnitProductCard = styled.p`
@@ -110,5 +114,5 @@ export const Loader = styled.span`
   align-items: center;
   font-size: 1.5rem;
   color: #0e1216;
-
+  margin-bottom: 6rem;
 `;
